@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,user-scalable=no"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="WebデザイナーShunsuke Ikegaki ポートフォリオ"
+    />
+    <meta property="og:url" content="URLが入る" />
+    <meta
+      property="og:description"
+      content="Shunsuke Ikegakiのポートフォリオサイトです。"
+    />
+    <meta property="og:image" content="img/ogp.png" />
+    <meta
+      name="description"
+      content="Shunsuke Ikegakiのポートフォリオサイトです"
+    />
+    <title>Shunsuke Ikegaki ポートフォリオ</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+    <link
+      href="css/animation.css"
+      media="all"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="css/particle.css"
+      media="all"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- header -->
+      <header class="header fixed-top">
+        <div class="inner">
+          <nav class="navbar navbar-expand-lg navbar-light w-100">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Shunsuke Ikegaki </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarToggler"
+                aria-controls="navbarToggler"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 expand">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#skill"
+                      >SKILL</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">ABOUT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#works">WORKS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#works">CONTACT</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- /header -->
+
+      <main class="content">
+        <!-- main-visual -->
+        <div class="main-visual">
+          <div id="particles-js"></div>
+          <div class="container" id="wrapper">
+            <div class="row">
+              <div class="col-md-5 col-sm-12 text-center">
+                <img src="img/shunsuke.jpg" alt="" class="rounded-circle" />
+              </div>
+              <div
+                class="
+                  main-visual-inner
+                  col-md-7 col-sm-12
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                "
+              >
+                <div>
+                  <div class="name-wrap py-md-0 py-1">
+                    <div class="name-text h2 fadeIn1">Name:</div>
+                    <div class="fw-bold h3 fadeIn3">池垣 隼介</div>
+                  </div>
+
+                  <div class="university-wrap py-md-0 py-1 fadeIn5">
+                    <div class="university-text h2">University:</div>
+                    <div class="fw-bold h3 fadeIn7">
+                      筑波大学<br />情報メディア創成学類
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /main-visual -->
+        <!-- skill -->
+        <div class="skill section skillfulness" id="skill">
+          <div class="inner">
+            <h2 class="title text-white">SKILLS</h2>
+            <div id="skillswrap">
+              <div class="container">
+                <div class="row text-center">
+                  <div class="col-lg-3 col-md-6 col-lg-offset-3 centered">
+                    <canvas id="html" height="130" width="130"></canvas>
+                    <p class="text-white">HTML</p>
+                    <br />
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-lg-offset-3 centered">
+                    <canvas id="css" height="130" width="130"></canvas>
+                    <p class="text-white">CSS</p>
+                    <br />
+                  </div>
+                  <div class="col-lg-3 col-md-6 centered">
+                    <canvas id="javascript" height="130" width="130"></canvas>
+                    <p class="text-white">Javascript</p>
+                    <br />
+                  </div>
+                  <div class="col-lg-3 col-md-6 centered">
+                    <canvas id="bootstrap" height="130" width="130"></canvas>
+                    <p class="text-white">Bootstrap</p>
+                    <br />
+                  </div>
+                  <div class="col-lg-3 col-md-6 centered">
+                    <canvas id="wordpress" height="130" width="130"></canvas>
+                    <p class="text-white">Wordpress</p>
+                    <br />
+                  </div>
+                  <div class="col-lg-3 col-md-6 centered">
+                    <canvas id="photoshop" height="130" width="130"></canvas>
+                    <p class="text-white">Photoshop</p>
+                    <br />
+                  </div>
+                  <div class="col-lg-3 col-md-6 centered">
+                    <canvas id="illustrator" height="130" width="130"></canvas>
+                    <p class="text-white">Illustrator</p>
+                    <br />
+                  </div>
+                  <div class="col-lg-3 col-md-6 centered">
+                    <canvas id="python" height="130" width="130"></canvas>
+                    <p class="text-white">Python</p>
+                    <br />
+                  </div>
+                </div>
+                <!--/.row -->
+                <br />
+              </div>
+              <!--/.container -->
+            </div>
+            <!--/ #skillswrap -->
+          </div>
+        </div>
+        <!-- /skill -->
+        <!-- career -->
+        <section class="career section" id="career">
+          <div class="inner">
+            <h2 class="title">CAREER</h2>
+            <div class="container mt-5 mb-5">
+              <div class="row">
+                <div class="col-md-8 offset-md-3">
+                  <ul class="timeline w-100">
+                    <li>
+                      <p class="fs-4 float-right colorstr">2000　</p>
+                      <p>大阪府で生まれる</p>
+                    </li>
+                    <li>
+                      <p class="fs-4 float-right colorstr">2014　</p>
+                      <p>大阪府河内長野中学校で硬式テニス部キャプテンになる</p>
+                    </li>
+                    <li>
+                      <p class="fs-4 float-right colorstr">2016　</p>
+                      <p>大阪府生野高等学校に合格</p>
+                    </li>
+                    <li>
+                      <p class="fs-4 float-right colorstr">2017　</p>
+                      <p>高校で硬式テニス部キャプテンになる</p>
+                    </li>
+                    <li>
+                      <p class="fs-4 float-right colorstr">2019</p>
+                      <p>神戸大学不合格で浪人することになる</p>
+                    </li>
+                    <li>
+                      <p class="fs-4 float-right colorstr" 　>2019</p>
+                      <p>
+                        駿台予備校で浪人しながらもプログラミングの楽しさに目覚め、空き時間に学び始める
+                      </p>
+                    </li>
+                    <li>
+                      <p class="fs-4 float-right colorstr">2020</p>
+                      <p>筑波大情報学群情報メディア創成学類に合格</p>
+                    </li>
+                    <li>
+                      <p class="fs-4 float-right colorstr">2020</p>
+                      <p>筑波大体育会硬式庭球部に入部する</p>
+                    </li>
+                    <li>
+                      <p class="fs-4 float-right colorstr">2021</p>
+                      <p>多数の企業様のHP制作を行う</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /career -->
+
+        <!-- about -->
+        <div class="about section" style="background-color: white" id="about">
+          <div class="container my-5">
+            <div class="row justify-content-center">
+              <h2 class="title mb-5 pb-5">ABOUT ME</h2>
+
+              <div class="col-sm-12 col-md-7 slide-left show">
+                <img src="img/S__85590036.jpg" alt="" class="img-fluid" />
+              </div>
+              <div
+                class="
+                  col-sm-12 col-md-12 col-lg-5
+                  order-md-1
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                "
+              >
+                <div class="slide-right show">
+                  <h1 class="mb-5">Myself</h1>
+                  <div class="h3">プロフィール</div>
+                  <p>
+                    現在、筑波大学情報学類に所属する大学2回生であるその傍らでWEB制作、WEBデザインを行なっております。主にプログラミングを専門とする学部に所属しています。
+                    授業ではもちろんのこと日々プログラミング学習をしています。
+                    茨城県つくば市在住、主なスキルはWEB制作で、常にトレンドに敏感で、明るくシンプルで伝わりやすいデザインを得意としております。
+                  </p>
+                  <div class="h3 mt-3">ワークタイム</div>
+                  <p>
+                    大学生ということで授業もほとんどありませんし、基本リモート授業なので、時間としては、毎日10時間以上は取れます。十分に仕事に力を注ぎ込める環境ですので作業開始から１週間以内で納品可能です！
+                    また大学の授業や独学でもプログラミングやシステムについて学んでいるので専門的な質問などもお答えできますのでぜひご相談いただけたらと思います。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container my-5">
+            <div class="row justify-content-center">
+              <div class="col-sm-12 col-md-7 order-lg-2 slide-right show">
+                <img src="img/S__85590039.jpg" alt="" class="img-fluid" />
+              </div>
+              <div
+                class="
+                  col-sm-12 col-md-12 col-lg-5
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                "
+              >
+                <div class="slide-left show">
+                  <h1 class="mb-5">Service</h1>
+
+                  <div class="h3">デザイン</div>
+                  <p>
+                    お客様との緻密なヒアリングに基づきながら不明点が生じないように常にコミュニケーションを取って満足していただけるようなデザインを提案します。
+                    <br />
+                    茨城県つくば市に在住しているので近場だと実際に会って打ち合わせをしたりzoomなどでオンライン打ち合わせをしたりすることも可能です。
+                    　<br />
+                    明るくシンプルで分かりやすいデザインを得意としています。そのほかにも重く力強いデザインやJavaScriptを用いて動きのあるホームページを作ることも可能です。
+                  </p>
+                  <div class="h3 mt-3">コーディング</div>
+                  <p>
+                    HTMLとCSSのコーディングに自信があります。今、NoCodeでしかホームページ制作ができず実際にコードを書くことができない又はコードの意味を理解していないという方がフリーランスの中でも増えています。NoCodeでしか制作ができない場合、ちょっとした配置や余白の変更などが難しかったり不可能だったりすることがあります。
+                    そのような中途半端な技術ではなく、しっかりと１からでも手書きでホームページを制作できるような技術を持っています。その点は安心してお任せください。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /about -->
+        <!-- works -->
+        <section class="works section bg-light" id="works">
+          <div class="inner" style="width: 100%">
+            <h2 class="title">WORKS</h2>
+            <div class="works-list">
+              <a
+                class="works-item"
+                href="img/screencapture-file-Users-ikegaki-shunsuke-OneDrive-HTML-CSS-1-index-html-2021-07-03-17_22_16.png"
+              >
+                <p class="works-img">
+                  <img
+                    src="img/screencapture-file-Users-ikegaki-shunsuke-OneDrive-HTML-CSS-1-index-html-2021-07-03-17_22_16.png"
+                    alt=""
+                    style="background-size: cover; width: 100%; height: 487px"
+                  />
+                </p>
+                <p class="works-name">
+                  徳田優一さんのポートフォリオサイトの模写コーディング
+                </p>
+                <p class="works-info">手書きでCoding(+Responsive)</p>
+              </a>
+              <a
+                class="works-item"
+                href="img/screencapture-file-Users-ikegaki-shunsuke-OneDrive-HTML-CSS-2-index-html-2021-07-03-17_21_01.png"
+              >
+                <p class="works-img">
+                  <img
+                    src="img/screencapture-file-Users-ikegaki-shunsuke-OneDrive-HTML-CSS-2-index-html-2021-07-03-17_21_01.png"
+                    alt=""
+                    style="background-size: cover; width: 100%; height: 487px"
+                  />
+                </p>
+                <p class="works-name">
+                  プロレド・パートナーズさんのホームページの模写コーディング
+                </p>
+                <p class="works-info">手書きでCoding(+Responsive)</p>
+              </a>
+              <a
+                class="works-item"
+                href="img/screencapture-file-Users-ikegaki-shunsuke-OneDrive-HTML-CSS-prehtml-index-html-2021-06-24-16_13_06 (1) (1) (1).png"
+              >
+                <p class="works-img toolong">
+                  <img
+                    src="img/screencapture-file-Users-ikegaki-shunsuke-OneDrive-HTML-CSS-prehtml-index-html-2021-06-24-16_13_06 (1) (1) (1).png"
+                    alt=""
+                    style="
+                      background-size: cover;
+                      width: 100%;
+                      height: 487px;
+                      object-fit: cover;
+                      object-position: 0 0;
+                    "
+                  />
+                </p>
+                <p class="works-name">
+                  MAOIQ株式会社さんのホームページの模写コーディング
+                </p>
+                <p class="works-info">手書きでCoding(+Responsive)</p>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- /works -->
+
+        <!-- contact -->
+        <section class="contact section bg-white" id="contact">
+          <div class="inner">
+            <h2 class="title">CONTACT</h2>
+            <p class="lead">
+              お問い合わせは、<br
+                class="sp-only"
+              />メールにてお願いいたします。<br />
+              貴社をお手伝いできることを心より楽しみにしております。
+            </p>
+            <div class="contact-list">
+              <span class="contact-item"
+                >ikegaki.shunsuek.work'@'gmail.com</span
+              >
+            </div>
+          </div>
+        </section>
+        <!-- /contact -->
+        <div class="page-top" id="js-page-top">
+          <span class="material-icons-outlined">expand_less</span>
+        </div>
+      </main>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="copyright">&copy;Shunsuke Ikegaki</div>
+      </footer>
+      <!-- /footer -->
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/easing.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/particle.js"></script>
+  </body>
+</html>

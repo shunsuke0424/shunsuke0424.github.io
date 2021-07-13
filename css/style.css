@@ -1,0 +1,547 @@
+body {
+  font-family: "Montserrat", "Helvetica Neue", Arial,
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 0.8px;
+  color: #333;
+}
+
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+  width: 900px;
+}
+ul.timeline:before {
+  content: " ";
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+ul.timeline > li {
+  margin: 20px;
+  padding-left: 20px;
+}
+ul.timeline > li:before {
+  content: " ";
+  background: #22c0e8;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+
+  border: 3px solid #22c0e8;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  z-index: 400;
+}
+.colorstr {
+  color: #22c0e8;
+  font-weight: bold;
+  font-style: normal;
+}
+
+a {
+  transition: opacity 0.3s;
+  text-decoration: none;
+  color: #1ca9e3;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+  border-style: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.pc-only {
+  display: block;
+}
+
+.sp-only {
+  display: none;
+}
+
+.expand li a {
+  /*線の基点とするためrelativeを指定*/
+  position: relative;
+}
+
+.expand li.current a,
+.expand li a:hover {
+  color: #0481a2;
+}
+
+.expand li a::after {
+  content: "";
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  /*線の形状*/
+  width: 80%;
+  height: 2px;
+  background: #0481a2;
+  /*アニメーションの指定*/
+  transition: all 0.3s;
+  transform: scale(0, 1); /*X方向0、Y方向1*/
+  transform-origin: center top; /*上部中央基点*/
+}
+
+/*現在地とhoverの設定*/
+.expand li.current a::after,
+.expand li a:hover::after {
+  transform: scale(1, 1); /*X方向にスケール拡大*/
+}
+/*--------------------------------
+ レイアウト
+---------------------------------*/
+.wrapper {
+  padding-top: 102px;
+}
+.section {
+  padding: 90px 0;
+}
+
+.section:nth-of-type(odd) {
+  background-color: #f7f7f7;
+}
+
+.inner {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/*--------------------------------
+ 見出し
+---------------------------------*/
+.title {
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 40px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #333;
+}
+
+.lead {
+  margin-bottom: 30px;
+}
+
+/*--------------------------------
+ヘッダー
+---------------------------------*/
+.header {
+  background-color: #fff;
+  box-shadow: 0 5px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+.header .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.header-logo {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-right: 20px;
+  letter-spacing: 0.05em;
+}
+
+.header-logo a {
+  color: #333;
+}
+
+.header-nav-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.header-nav-item a {
+  position: relative;
+  font-size: 13px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 0;
+  transition: 0.3s;
+  letter-spacing: 0.05em;
+  color: #333;
+}
+.header-nav-item a:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  content: "";
+  transition: 0.3s;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #333;
+}
+
+.header-nav-item a:hover:after {
+  width: 100%;
+}
+
+/*--------------------------------
+ メインビジュアル
+---------------------------------*/
+.main-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.main-visual-inner {
+  padding: 0 40px;
+}
+
+.main-visual-title {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  letter-spacing: 0.1em;
+}
+.main-visual-subtitle {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 40px;
+  letter-spacing: 0.08em;
+}
+
+/*--------------------------------
+ Works
+---------------------------------*/
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -40px;
+}
+
+.works-item {
+  width: 31.74603%;
+  margin-right: 1.5873%;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.works-item:hover {
+  opacity: 0.9;
+}
+
+.works-item:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+.works-img img {
+  border: 1px solid #e6e6e6;
+}
+
+.works-name {
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.works-info {
+  font-size: 10px;
+}
+
+/*--------------------------------
+ Skill
+---------------------------------*/
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: -50px;
+}
+
+.skill-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 48%;
+  margin-bottom: 50px;
+}
+
+.skill-img {
+  width: 60px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.skill-body {
+  flex: 1;
+}
+
+.skill-name {
+  margin-bottom: 3px;
+}
+.skillfulness {
+  background-color: black;
+}
+
+/*--------------------------------
+ About
+---------------------------------*/
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.profile-img {
+  width: 20%;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+.profile-img img {
+  border-radius: 50%;
+}
+.profile-body {
+  flex: 1;
+}
+.profile-body p:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+/*--------------------------------
+ Contact
+---------------------------------*/
+.contact {
+  text-align: center;
+}
+
+.contact-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.contact-text {
+  margin-top: 10px;
+}
+/*--------------------------------
+ ページトップ
+---------------------------------*/
+.page-top {
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #4c4c4c;
+}
+
+.page-top .material-icons-outlined {
+  vertical-align: bottom;
+  color: #fff;
+}
+
+/*--------------------------------
+ フッター
+---------------------------------*/
+.footer {
+  padding: 30px;
+  background-color: #333;
+}
+
+.copyright {
+  font-size: 10px;
+  text-align: center;
+  color: #797979;
+}
+
+/*--------------------------------
+ 下層：Worksページ
+---------------------------------*/
+.article {
+  padding: 80px 0;
+}
+
+.article-inner {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.article-title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.article-img {
+  margin-bottom: 20px;
+}
+
+.article-body {
+  max-width: 720px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.article-info-title {
+  font-size: 15px;
+}
+
+.article-body img {
+  margin-bottom: 30px;
+}
+
+.article-body p {
+  margin-bottom: 30px;
+}
+
+.home-link {
+  text-align: center;
+}
+
+/*media Queries 767
+----------------------------------------------------*/
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+  .none {
+    display: none;
+  }
+
+  .pc-only {
+    display: none;
+  }
+
+  .sp-only {
+    display: block;
+  }
+
+  /* 見出し */
+  .title {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  /* レイアウト */
+  .wrapper {
+    padding-top: 90px;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .inner {
+    padding: 0 20px;
+  }
+
+  /* ヘッダー */
+  .header .inner {
+    padding: 15px;
+  }
+
+  .header-logo {
+    font-size: 15px;
+    margin-right: 15px;
+  }
+
+  .header-nav-item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .header-nav-item a {
+    font-size: 10px;
+  }
+
+  .header-nav-item a:after {
+    display: none;
+  }
+
+  /*  メインビジュアル */
+
+  .main-visual-inner {
+    padding: 0 20px;
+  }
+
+  .main-visual-title {
+    font-size: 30px;
+  }
+  .main-visual-subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  /* Works */
+  .works-name {
+    font-size: 10px;
+  }
+
+  .works-list {
+    justify-content: space-between;
+  }
+
+  .works-item {
+    flex: 0 0 48%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  /* Skill */
+  .skill-list {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .skill-item {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .skill-item:last-child {
+    margin-bottom: 0;
+  }
+
+  /* About */
+  .profile {
+    display: block;
+  }
+  .profile-img {
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+
+  .profile-body p:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  /* フッター */
+  .footer {
+    padding: 20px;
+  }
+
+  /* 下層ページ */
+  .article {
+    padding: 50px 0;
+  }
+}

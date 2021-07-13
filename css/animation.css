@@ -34,6 +34,51 @@
   animation-delay: 0.7s; /*6で解説*/
   animation-direction: normal; /*7で解説*/
 }
+.fadeIn2 {
+  animation-name: fadeInAnime; /*1で解説*/
+  animation-fill-mode: backwards; /*2で解説*/
+  animation-duration: 3s; /*3で解説*/
+  animation-iteration-count: 1; /*4で解説*/
+  animation-timing-function: ease; /*5で解説*/
+  animation-delay: 0.2s; /*6で解説*/
+  animation-direction: normal; /*7で解説*/
+}
+.fadeIn4 {
+  animation-name: fadeInAnime; /*1で解説*/
+  animation-fill-mode: backwards; /*2で解説*/
+  animation-duration: 3s; /*3で解説*/
+  animation-iteration-count: 1; /*4で解説*/
+  animation-timing-function: ease; /*5で解説*/
+  animation-delay: 0.4s; /*6で解説*/
+  animation-direction: normal; /*7で解説*/
+}
+.fadeIn6 {
+  animation-name: fadeInAnime; /*1で解説*/
+  animation-fill-mode: backwards; /*2で解説*/
+  animation-duration: 3s; /*3で解説*/
+  animation-iteration-count: 1; /*4で解説*/
+  animation-timing-function: ease; /*5で解説*/
+  animation-delay: 0.6s; /*6で解説*/
+  animation-direction: normal; /*7で解説*/
+}
+.fadeIn8 {
+  animation-name: fadeInAnime; /*1で解説*/
+  animation-fill-mode: backwards; /*2で解説*/
+  animation-duration: 3s; /*3で解説*/
+  animation-iteration-count: 1; /*4で解説*/
+  animation-timing-function: ease; /*5で解説*/
+  animation-delay: 0.8s; /*6で解説*/
+  animation-direction: normal; /*7で解説*/
+}
+.fadeIn9 {
+  animation-name: fadeInAnime; /*1で解説*/
+  animation-fill-mode: backwards; /*2で解説*/
+  animation-duration: 3s; /*3で解説*/
+  animation-iteration-count: 1; /*4で解説*/
+  animation-timing-function: ease; /*5で解説*/
+  animation-delay: 0.9s; /*6で解説*/
+  animation-direction: normal; /*7で解説*/
+}
 
 .slide-right {
   opacity: 0;
@@ -44,6 +89,11 @@
 .slide-left {
   opacity: 0;
   transform: translate(-40px, 0);
+  transition: all 1.3s 0s ease-out;
+}
+.slide-nomal {
+  opacity: 0;
+  transform: translateY(20px);
   transition: all 1.3s 0s ease-out;
 }
 

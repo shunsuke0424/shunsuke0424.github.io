@@ -134,6 +134,16 @@ li {
   letter-spacing: 0.05em;
   color: #333;
 }
+.mini-title{
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 40px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #333;
+
+}
 
 .lead {
   margin-bottom: 30px;
@@ -232,6 +242,15 @@ li {
   letter-spacing: 0.08em;
 }
 
+/*--------------------------------
+ workflow
+---------------------------------*/
+.img-wrapper img{
+  height: 300px;
+}
+.img-wrapper{
+  margin-bottom: 40px;
+}
 /*--------------------------------
  Works
 ---------------------------------*/

@@ -79,6 +79,24 @@
   animation-delay: 0.9s; /*6で解説*/
   animation-direction: normal; /*7で解説*/
 }
+.fadeIn10 {
+  animation-name: fadeInAnime; /*1で解説*/
+  animation-fill-mode: backwards; /*2で解説*/
+  animation-duration: 3s; /*3で解説*/
+  animation-iteration-count: 1; /*4で解説*/
+  animation-timing-function: ease; /*5で解説*/
+  animation-delay: 1.0s; /*6で解説*/
+  animation-direction: normal; /*7で解説*/
+}
+.fadeIn11 {
+  animation-name: fadeInAnime; /*1で解説*/
+  animation-fill-mode: backwards; /*2で解説*/
+  animation-duration: 3s; /*3で解説*/
+  animation-iteration-count: 1; /*4で解説*/
+  animation-timing-function: ease; /*5で解説*/
+  animation-delay: 1.1s; /*6で解説*/
+  animation-direction: normal; /*7で解説*/
+}
 
 .slide-right {
   opacity: 0;

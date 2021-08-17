@@ -144,6 +144,14 @@ li {
   color: #333;
 
 }
+.mini-mini-title{
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #333;
+}
 
 .lead {
   margin-bottom: 30px;
@@ -442,6 +450,18 @@ li {
   body {
     font-size: 13px;
     line-height: 1.7;
+    
+  } 
+  .lead{
+    font-size: 12px;
+  }
+  .workflow-box{
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: #ececec;
+  }
+  .workflow-title{
+    font-size: 40px;
   }
   .none {
     display: none;
@@ -520,7 +540,7 @@ li {
   }
 
   .works-item {
-    flex: 0 0 48%;
+    flex: 0 0 100%;
     margin-right: 0;
     margin-bottom: 30px;
   }
@@ -563,4 +583,8 @@ li {
   .article {
     padding: 50px 0;
   }
+
+   /*  レビュー画面 */
+
+  
 }

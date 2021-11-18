@@ -6,6 +6,9 @@ body {
   letter-spacing: 0.8px;
   color: #333;
 }
+.img-fluid {
+  border-radius: 10px;
+}
 
 ul.timeline {
   list-style-type: none;
@@ -134,7 +137,7 @@ li {
   letter-spacing: 0.05em;
   color: #333;
 }
-.mini-title{
+.mini-title {
   font-size: 25px;
   font-weight: bold;
   line-height: 1;
@@ -142,9 +145,8 @@ li {
   text-align: center;
   letter-spacing: 0.05em;
   color: #333;
-
 }
-.mini-mini-title{
+.mini-mini-title {
   font-size: 25px;
   font-weight: bold;
   line-height: 1;
@@ -253,10 +255,10 @@ li {
 /*--------------------------------
  workflow
 ---------------------------------*/
-.img-wrapper img{
+.img-wrapper img {
   height: 300px;
 }
-.img-wrapper{
+.img-wrapper {
   margin-bottom: 40px;
 }
 /*--------------------------------
@@ -450,17 +452,16 @@ li {
   body {
     font-size: 13px;
     line-height: 1.7;
-    
-  } 
-  .lead{
+  }
+  .lead {
     font-size: 12px;
   }
-  .workflow-box{
+  .workflow-box {
     margin-top: 50px;
     padding: 20px 0;
     background-color: #ececec;
   }
-  .workflow-title{
+  .workflow-title {
     font-size: 40px;
   }
   .none {
@@ -584,7 +585,5 @@ li {
     padding: 50px 0;
   }
 
-   /*  レビュー画面 */
-
-  
+  /*  レビュー画面 */
 }

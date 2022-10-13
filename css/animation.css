@@ -85,7 +85,7 @@
   animation-duration: 3s; /*3で解説*/
   animation-iteration-count: 1; /*4で解説*/
   animation-timing-function: ease; /*5で解説*/
-  animation-delay: 1.0s; /*6で解説*/
+  animation-delay: 1s; /*6で解説*/
   animation-direction: normal; /*7で解説*/
 }
 .fadeIn11 {
@@ -102,17 +102,17 @@
   opacity: 0;
   transform: translate(40px, 0);
   transform: translateY(20px);
-  transition: all 1.3s 0s ease-out;
+  transition: all 1s 0s ease-out;
 }
 .slide-left {
   opacity: 0;
   transform: translate(-40px, 0);
-  transition: all 1.3s 0s ease-out;
+  transition: all 1s 0s ease-out;
 }
 .slide-nomal {
   opacity: 0;
   transform: translateY(20px);
-  transition: all 1.3s 0s ease-out;
+  transition: all 1s 0s ease-out;
 }
 
 @keyframes fadein-left {

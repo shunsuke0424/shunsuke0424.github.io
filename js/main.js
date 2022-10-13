@@ -19,11 +19,11 @@ $(function () {
 
 let doughnutDataJs = [
   {
-    value: 85,
+    value: 35,
     color: "#26C6DA",
   },
   {
-    value: 15,
+    value: 65,
     color: "white",
   },
 ];
@@ -34,26 +34,26 @@ let myDoughnutJs = new Chart(
 // Bootstrap Chart
 let doughnutDataBootstrap = [
   {
-    value: 95,
+    value: 5,
     color: "#26C6DA",
   },
   {
-    value: 5,
+    value: 95,
     color: "white",
   },
 ];
 let myDoughnutBootstrap = new Chart(
-  document.getElementById("bootstrap").getContext("2d")
+  document.getElementById("c").getContext("2d")
 ).Doughnut(doughnutDataBootstrap);
 
 // WordPress Chart
 let doughnutDataWordPress = [
   {
-    value: 85,
+    value: 35,
     color: "#26C6DA",
   },
   {
-    value: 15,
+    value: 65,
     color: "white",
   },
 ];
@@ -64,11 +64,11 @@ let myDoughnutWordPress = new Chart(
 // HTML Chart
 let doughnutDataHtml = [
   {
-    value: 95,
+    value: 45,
     color: "#26C6DA",
   },
   {
-    value: 5,
+    value: 55,
     color: "white",
   },
 ];
@@ -79,11 +79,11 @@ let myDoughnutHtml = new Chart(
 // CSS Chart
 let doughnutDataCss = [
   {
-    value: 97,
+    value: 37,
     color: "#26C6DA",
   },
   {
-    value: 3,
+    value: 63,
     color: "white",
   },
 ];
@@ -94,11 +94,11 @@ let myDoughnutCss = new Chart(
 // Photoshop Chart
 let doughnutDataPhotoshop = [
   {
-    value: 90,
+    value: 10,
     color: "#26C6DA",
   },
   {
-    value: 10,
+    value: 90,
     color: "white",
   },
 ];
@@ -109,11 +109,11 @@ let myDoughnutPhotoshop = new Chart(
 // Illustrator Chart
 let doughnutDataIllustrator = [
   {
-    value: 70,
+    value: 97,
     color: "#26C6DA",
   },
   {
-    value: 30,
+    value: 3,
     color: "white",
   },
 ];
@@ -124,11 +124,11 @@ let myDoughnutIllustrator = new Chart(
 // Python Chart
 let doughnutDataPython = [
   {
-    value: 80,
+    value: 14,
     color: "#26C6DA",
   },
   {
-    value: 20,
+    value: 86,
     color: "white",
   },
 ];

@@ -19,11 +19,11 @@ $(function () {
 
 let doughnutDataJs = [
   {
-    value: 35,
+    value: 15,
     color: "#26C6DA",
   },
   {
-    value: 65,
+    value: 85,
     color: "white",
   },
 ];
@@ -49,11 +49,11 @@ let myDoughnutBootstrap = new Chart(
 // WordPress Chart
 let doughnutDataWordPress = [
   {
-    value: 35,
+    value: 12,
     color: "#26C6DA",
   },
   {
-    value: 65,
+    value: 88,
     color: "white",
   },
 ];
@@ -64,11 +64,11 @@ let myDoughnutWordPress = new Chart(
 // HTML Chart
 let doughnutDataHtml = [
   {
-    value: 45,
+    value: 2,
     color: "#26C6DA",
   },
   {
-    value: 55,
+    value: 98,
     color: "white",
   },
 ];
@@ -79,11 +79,11 @@ let myDoughnutHtml = new Chart(
 // CSS Chart
 let doughnutDataCss = [
   {
-    value: 37,
+    value: 5,
     color: "#26C6DA",
   },
   {
-    value: 63,
+    value: 95,
     color: "white",
   },
 ];
@@ -94,11 +94,11 @@ let myDoughnutCss = new Chart(
 // Photoshop Chart
 let doughnutDataPhotoshop = [
   {
-    value: 10,
+    value: 1,
     color: "#26C6DA",
   },
   {
-    value: 90,
+    value: 99,
     color: "white",
   },
 ];
@@ -124,11 +124,11 @@ let myDoughnutIllustrator = new Chart(
 // Python Chart
 let doughnutDataPython = [
   {
-    value: 14,
+    value: 10,
     color: "#26C6DA",
   },
   {
-    value: 86,
+    value: 90,
     color: "white",
   },
 ];

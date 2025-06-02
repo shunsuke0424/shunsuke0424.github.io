@@ -1,10 +1,18 @@
+:root {
+  --accent: #00adb5;
+  --bg-dark: #1b1b1b;
+  --bg-light: #222222;
+  --text-color: #eeeeee;
+}
+
 body {
-  font-family: "Montserrat", "Helvetica Neue", Arial,
+  font-family: "Poppins", "Montserrat", "Helvetica Neue", Arial,
     "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-  font-size: 14px;
-  line-height: 1.8;
+  font-size: 16px;
+  line-height: 1.7;
   letter-spacing: 0.8px;
-  color: #333;
+  color: var(--text-color);
+  background: linear-gradient(135deg, #111, #1e1e1e);
 }
 /* .img-fluid {
   border-radius: 10px;
@@ -31,19 +39,19 @@ ul.timeline > li {
 }
 ul.timeline > li:before {
   content: " ";
-  background: #22c0e8;
+  background: var(--accent);
   display: inline-block;
   position: absolute;
   border-radius: 50%;
 
-  border: 3px solid #22c0e8;
+  border: 3px solid var(--accent);
   left: 10px;
   width: 40px;
   height: 40px;
   z-index: 400;
 }
 .colorstr {
-  color: #22c0e8;
+  color: var(--accent);
   font-weight: bold;
   font-style: normal;
 }
@@ -51,7 +59,7 @@ ul.timeline > li:before {
 a {
   transition: opacity 0.3s;
   text-decoration: none;
-  color: #1ca9e3;
+  color: var(--accent);
 }
 
 img {
@@ -81,7 +89,7 @@ li {
 
 .expand li.current a,
 .expand li a:hover {
-  color: #0481a2;
+  color: var(--accent);
 }
 
 .expand li a::after {
@@ -93,7 +101,7 @@ li {
   /*線の形状*/
   width: 80%;
   height: 2px;
-  background: #00c5ad;
+  background: var(--accent);
   /*アニメーションの指定*/
   transition: all 0.3s;
   transform: scale(0, 1); /*X方向0、Y方向1*/
@@ -116,7 +124,7 @@ li {
 }
 
 .section:nth-of-type(odd) {
-  background-color: #f7f7f7;
+  background-color: var(--bg-dark);
 }
 
 .inner {
@@ -139,7 +147,7 @@ li {
   margin-bottom: 40px;
   text-align: center;
   letter-spacing: 0.05em;
-  color: #333;
+  color: var(--accent);
 }
 .mini-title {
   font-size: 25px;
@@ -148,7 +156,7 @@ li {
   margin-bottom: 40px;
   text-align: center;
   letter-spacing: 0.05em;
-  color: #333;
+  color: var(--accent);
 }
 .mini-mini-title {
   font-size: 25px;
@@ -156,7 +164,7 @@ li {
   line-height: 1;
   text-align: center;
   letter-spacing: 0.05em;
-  color: #333;
+  color: var(--accent);
 }
 
 .lead {
@@ -167,8 +175,8 @@ li {
 ヘッダー
 ---------------------------------*/
 .header {
-  background-color: #fff;
-  box-shadow: 0 5px 10px -6px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(90deg, var(--bg-dark), #000000);
+  box-shadow: 0 5px 10px -6px rgba(0, 0, 0, 0.5);
 }
 
 .header .inner {
@@ -187,7 +195,7 @@ li {
 }
 
 .header-logo a {
-  color: #333;
+  color: var(--text-color);
 }
 
 .header-nav-list {
@@ -207,7 +215,7 @@ li {
   padding: 5px 0;
   transition: 0.3s;
   letter-spacing: 0.05em;
-  color: #333;
+  color: var(--text-color);
 }
 .header-nav-item a:after {
   position: absolute;
@@ -219,7 +227,7 @@ li {
   transition: 0.3s;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  background-color: #333;
+  background-color: var(--accent);
 }
 
 .header-nav-item a:hover:after {
@@ -235,14 +243,16 @@ li {
   justify-content: center;
   text-align: center;
   padding: 50px 0;
+  background: radial-gradient(circle at center, var(--bg-light), #000);
+  color: var(--text-color);
 }
 
 .shadow-img {
-  filter: drop-shadow(20px 20px 0 #00c5ad);
+  filter: drop-shadow(20px 20px 0 var(--accent));
 }
 
 .name {
-  text-shadow: 5px 5px 0 #00c5ad;
+  text-shadow: 5px 5px 0 var(--accent);
   font-size: 70px;
 }
 
@@ -287,7 +297,7 @@ li {
   width: 31.74603%;
   margin-right: 1.5873%;
   margin-bottom: 40px;
-  color: #333;
+  color: var(--text-color);
 }
 
 .works-item:hover {
@@ -398,7 +408,7 @@ li {
   padding: 10px;
   cursor: pointer;
   text-align: center;
-  background-color: #4c4c4c;
+  background-color: var(--accent);
 }
 
 .page-top .material-icons-outlined {
@@ -411,13 +421,13 @@ li {
 ---------------------------------*/
 .footer {
   padding: 30px;
-  background-color: #333;
+  background: linear-gradient(90deg, var(--bg-dark), #000);
 }
 
 .copyright {
   font-size: 10px;
   text-align: center;
-  color: #797979;
+  color: var(--text-color);
 }
 
 /*--------------------------------
@@ -546,7 +556,7 @@ li {
 
   .name {
     margin-top: 24px;
-    text-shadow: 5px 5px 0 #00c5ad;
+    text-shadow: 5px 5px 0 var(--accent);
     font-size: 60px;
   }
   .main-visual-title {
